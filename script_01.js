@@ -88,7 +88,7 @@ function getString(firstName,familyName){
 }
 
 // 2. Funktionalität : string output
-output("Hi"); // call
+output("Nice to meet you"); // call
 function output(outputData) {  // Wrapper
     console.log(outputData);
 }
