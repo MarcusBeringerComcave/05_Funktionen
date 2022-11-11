@@ -71,17 +71,25 @@
     
 //     // 2. Funktionalität : data output
 
-//     console.log(outputStr);
-// }
-function ausgabeNamenParams2(firstName,familyName)
+// //     console.log(outputStr);
+// // }
+// function ausgabeNamenParams2(firstName,familyName)
 
-//****Funktionen 03b****/
-// Trennen der Funktionalitäten | return
+// //****Funktionen 03b****/
+// // Trennen der Funktionalitäten | return
 
+// // 1. Funtionalität : string composing
+
+output(getString("Maxine","Mütze"));
+function getString(firstName,familyName){
+    const gab = " ";
+    const outputStr = "Hallo " + firstName +gab + familyName + "!";
+    return outputStr;
+}
 
 // 2. Funktionalität : string output
-output("Hi");
-function output(outputData) {
+output("Hi"); // call
+function output(outputData) {  // Wrapper
     console.log(outputData);
 }
 
