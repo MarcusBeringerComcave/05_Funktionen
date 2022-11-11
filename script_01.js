@@ -25,13 +25,23 @@
 
 // 2a Parametrisierung + Datenübergabe von INNEN //
 
-ausgabeNamen();
 
-function ausgabeNamen() {
-    let firstName = "Sabine";  // what happens in Vegas, ...
-    console.log("Hallo " + firstName + "!");   
+// // console.log(firstName); // Fehler: Scope!
+// ausgabeNamen();
+// function ausgabeNamen() {
+//     let firstName = "Sabine";  // what happens in Vegas, ...
+//     console.log("Hallo " + firstName + "!");   
+// }
+
+/*****Funktionen 02b******/
+
+//2b Parametrisierung + Datenübergabe von AUSSEN
+
+// ausgabeNamenParam();
+
+function ausgabeNameParam(firstName) // Parameter
+{
+console.log("Hallo " + firstName + "!");
 }
-
-console.log(firstName); // Fehler: Scope!
-
+ausgabeNameParam("Sabine");// Argument sind Daten für Parameter
 
