@@ -48,12 +48,30 @@
 /*****Funktionen 02c********/
  // 2c. mehrere Parameter
 
-ausgabeNamenParams("Michael","Müller"); // Argument
-ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname"));// Argumente
+// 
+// ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname")); // Argumente
 
-function ausgabeNamenParams(firstName,familyName) // Parameter
+// function ausgabeNamenParams2(firstName,familyName) // Parameter
+// {
+//     console.log("Hallo " + firstName + " " + familyName + "!");
+// }
+
+/****** Funktionen 03a *****/
+//03a Vorbereitung
+// Postulat: one function = one job (Uncle Bob)
+// SRP single responsibility princible
+
+ausgabeNamenParams2("Michael","Müller"); // Argumente
+
+function ausgabeNamenParams2(firstName,familyName) // Parameter
 {
-    console.log("Hallo " + firstName + " " + familyName + "!");
+    //1 . Funktionalität : string composing
+    const gab = " ";
+    console.outputStr = "Hallo " + firstName + gab + familyName + "!";
+    
+    // 2. Funktionalität : data output
+
+    console.log(outputStr);
 }
 
 
